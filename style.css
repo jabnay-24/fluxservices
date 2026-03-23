@@ -189,7 +189,8 @@ h4 {
 #contact .social-links {
     display: flex;
     flex-direction: row;
-    margin-left: 90px;
+    justify-content: center;
+    margin-left: 0;
 }
 
 #contact .social-links a {
@@ -202,7 +203,7 @@ h4 {
 
 #contact h1 {
     -webkit-text-fill-color: transparent;
-    -webkit-text-fill-color: 1px #00abf0;
+    -webkit-text-stroke: 1px #00abf0;
 }
 
 #contact h4 {
@@ -230,8 +231,18 @@ h4 {
 }
 
 .social-links {
-    margin-left: -550px;
+    justify-content: center;
 }
+
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+}
+
 
 footer {
     text-align: center;
@@ -243,6 +254,17 @@ footer {
 
 footer ul li a {
     color: #d99923;
+}
+
+footer .footer-link {
+    border: 1px solid #00abf0;
+    padding: 4px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #d99923;
+    box-shadow: 0 0 10px #00abf0 inset;
+    cursor: pointer;
+    transition: .5s;
 }
 
 @media screen and (max-width: 768px){
